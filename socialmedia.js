@@ -3,7 +3,9 @@ function social(k) {
     let thousands = k/1000
     let millions = k/1000000
     let billions = k/1000000000
-// Here we check the edge cases and make sure that no strings, decimals or numbers less than zero is fed into the program
+// Here we check the edge cases and make sure that no strings, decimals or numbers less than zero is fed into the program. 
+// Then we use a series of if operations to check various input and provide the appropriate results.
+
     if (isNaN(k) || k < 0 || Number.isInteger(k) ===false){
         return ('invalid number, you can only have real number of people following you')
     }
@@ -30,8 +32,8 @@ function social(k) {
             return ('Your followers have exceeded the number of human beings on earth, we go leave this app for you')
         }
         else {
-            return (`You have ${k} followers`) //Using template strings
+            return (`You have ${k} followers`)
         }
     }
 }
-console.log(social(9464549))
+console.log(social(9464549)) //Here you call the function and input the value of downloads or followers.
